@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.container {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1, h2, h3 {
+    color: #333;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: #eee;
+    border-radius: 4px;
+}
+.nav a:hover {
+    background: #ddd;
+}
+/* Примерен стил за чекбокса */
+input[type="checkbox"] {
+    margin-right: 5px; /* Малко пространство между чекбокса и етикета */
+}
+/* Общи стилове за центриране на формите */
+.form-container {
+    width: 300px;
+    margin: 0 auto; /* Центриране на формата */
+    text-align: center; /* Центриране на текста в формата */
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.password-container input[type="password"] {
+    width: 60%; /* Можете да регулирате ширината на полето за парола */
+}
+
+.password-container input[type="checkbox"] {
+    margin-left: 10px; /* Отстояние между чекбокса и текста */
+}
+
+.toggle-label {
+    margin-left: 5px;
+}
+
+/* Стилизиране на бутоните */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

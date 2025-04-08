@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дипломен проект - Автосервиз</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Дипломен проект - Автосервиз</h1>
+        <p>Училище: Професионална гимназия по електротехника</p>
+        <p>Населено място: Варна</p>
+        <p>Ученици: Кристиян Попов</p>
+        <p>Ръководител: [Име на ръководителя]</p>
+    </header>
+
+    <nav class="nav">
+        <a href="Начало.html">Начало</a>
+        <a href="За нас.html">За нас</a>
+        <a href="Услуги.html">Услуги</a>
+        <a href="Контакти.html">Контакти</a>
+    </nav>
+
+    <section id="login" class="form-container">
+        <h2>Вход</h2>
+        <p>Моля, влезте в профила си:</p>
+        <form id="login-form">
+            <label for="username">Имейл:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Парола:</label><br>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br><br>
+            <button type="submit">Вход</button>
+        </form>
+    </section>
+
+    <section id="register" class="form-container">
+        <h2>Регистрация</h2>
+        <p>Създайте нов профил:</p>
+        <form id="register-form">
+            <label for="reg-username">Потребителско име:</label><br>
+            <input type="text" id="reg-username" name="reg-username" required><br><br>
+            <label for="username">Имейл:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="reg-password">Парола:</label><br>
+            <div class="password-container">
+                <input type="password" id="reg-password" name="reg-password" required>
+            </div>
+            <br><br>
+            <button type="submit">Регистрация</button>
+        </form>
+    </section>
+
+    <div id="admin-panel" style="display: none;">
+        <h2>Администраторски панел</h2>
+        <p>Добре дошли, администратор!</p>
+        <button id="view-appointments">Преглед на записаните часове</button>
+        <button id="view-clients">Преглед на клиенти</button>
+        <button id="logout">Изход</button>
+        <div id="admin-content">
+            <!-- Съдържание за администратор -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Автосервиз. Всички права запазени.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
